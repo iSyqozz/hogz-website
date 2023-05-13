@@ -1,0 +1,50 @@
+:root{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.first-image{
+    position: absolute;
+    left: 50%;
+    bottom:0 ;
+    transform: translate(-50%,0);
+    width: 750px;
+    height: 550px;
+}
+
+.welcome{
+    display: none;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top:300px;
+    transform: translate(-50%,0);
+    font-size: 40;
+}
+
+@media only screen and (max-height: 800px) {
+    .first-image{
+        width: 500;
+        height: 400;
+    }
+  }
+
+@media only screen and (max-height: 600px) {
+  .first-image{
+      width: 400;
+      height: 275;
+  }
+}
+/*@media only screen and (max-height: 620px) {
+/*  .first-image{
+/*      width: 500;
+/*      height: 400;
+/*  }
+/*}
